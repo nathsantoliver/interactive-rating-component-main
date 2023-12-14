@@ -1,0 +1,129 @@
+
+/* CONFIGS */
+/*
+Font size (paragraphs): 15px
+font-family: 'Overpass', sans-serif;
+Font Weight: 400, 700
+*/
+
+:root {
+    /* PRIMARY COLORS */
+    --orange: hsl(25, 97%, 53%);
+
+    /* NEUTRAL COLORS */
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* CARD */
+.card {
+    background-color: var(--dark-blue);
+    width: 420px;
+    height: 440px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 35px;
+    /* box-shadow: 15px 20px 15px var(--very-dark-blue); */
+}
+
+/* CARD FEEDBACK */
+.card_feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+}
+
+.star_icon {
+    background-color: rgba(124, 135, 152, 0.247);
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    color: var(--white);
+    font-size: 27px;
+    font-weight: 700;
+    text-align: left;
+    padding: 15px 0 10px 0;
+}
+
+.description {
+    color: var(--light-grey);
+    text-align: left;
+    line-height: 1.6;
+}
+
+.rating_stars ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.rating_stars ul li {
+    background-color: rgba(124, 135, 152, 0.247);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-grey);
+    font-size: 16px;
+}
+
+.submit {
+    background-color: var(--orange);
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/* CARD RESULT */
+.card_result {
+    display: none;
+}
+
+/* FOOTER */
+.attribution {
+    font-size: 9px;
+    position: absolute;
+    bottom: 5px;
+    left: 8%;
+    right: 8%;
+}
+
+.attribution a {
+    color: var(--light-red);
+}
+
+/* RESPONSIVE */
+@media(max-width: 450px) {
+    /* FOOTER */
+    .attribution {
+        font-size: 7px;
+    }
+}
