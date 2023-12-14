@@ -44,6 +44,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     /* align-items: flex-start; */
+    display: none;
 }
 
 .star_icon {
@@ -57,7 +58,7 @@ body {
     justify-content: center;
 }
 
-.title {
+.feedback_title {
     color: var(--white);
     font-size: 27px;
     font-weight: 700;
@@ -65,7 +66,7 @@ body {
     padding: 15px 0 10px 0;
 }
 
-.description {
+.feedback_description {
     color: var(--light-grey);
     text-align: left;
     line-height: 1.6;
@@ -90,6 +91,16 @@ body {
     font-size: 16px;
 }
 
+.rating_stars ul li:hover {
+    background-color: var(--orange);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.rating_stars ul li:active {
+    background-color: var(--medium-grey);
+}
+
 .submit {
     background-color: var(--orange);
     height: 50px;
@@ -102,15 +113,53 @@ body {
     letter-spacing: 2px;
 }
 
+.submit:hover {
+    background-color: var(--white);
+    color: var(--orange);
+    cursor: pointer;
+}
+
 /* CARD RESULT */
 .card_result {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+    /* display: none; */
+}
+
+.result_star {
+    background-color: rgba(124, 135, 152, 0.247);
+    padding: 8px 20px 5px;
+    margin-top: 8px;
+    font-size: 16px;
+    border-radius: 30px;
+    color: var(--orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result_title {
+    color: var(--white);
+    font-size: 27px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.result_description {
+    color: var(--light-grey);
+    text-align: center;
+    line-height: 1.6;
 }
 
 /* FOOTER */
 .attribution {
     font-size: 9px;
     position: absolute;
+    color: var(--white);
     bottom: 5px;
     left: 8%;
     right: 8%;
@@ -118,6 +167,7 @@ body {
 
 .attribution a {
     color: var(--light-red);
+    color: var(--orange);
 }
 
 /* RESPONSIVE */
