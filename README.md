@@ -39,7 +39,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub Solution](https://github.com/nathsantoliver/interactive-rating-component-main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Interactive Rating Component](https://interactive-rating-component-main-seven-beryl.vercel.app/)
 
 ## My process
 
