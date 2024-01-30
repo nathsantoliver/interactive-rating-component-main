@@ -35,10 +35,6 @@ body {
     margin: auto;
     padding: 35px;
     border-radius: 35px;
-    /* position: absolute;
-    left: calc(50% - 210px);
-    z-index: 1; */
-    /* box-shadow: 15px 20px 15px var(--very-dark-blue); */
 }
 
 /**************** CARD FEEDBACK ****************/
@@ -78,7 +74,7 @@ body {
     line-height: 1.6;
 }
 
-/* .rating_stars .star-items */
+
 .rating_stars .star-items {
     display: flex;
     justify-content: space-between;
@@ -86,7 +82,7 @@ body {
     padding: 20px 0;
 }
 
-/* .rating_stars .star-items .star */
+
 .rating_stars .star-items .star {
     background-color: rgba(124, 135, 152, 0.247);
     width: 50px;
@@ -101,20 +97,20 @@ body {
     font-weight: 700;
 }
 
-/* .rating_stars .star-items .star:hover */
+
 .rating_stars .star-items .star:hover {
     background-color: var(--orange);
     color: var(--white);
     cursor: pointer;
 }
 
-/* .rating_stars .star-items .star:active */
+
 .rating_stars .star-items .star:active {
     background-color: var(--medium-grey);
     color: var(--white);
 }
 
-/* .rating_stars .star-items .star.active */
+
 .rating_stars .star-items .star.active {
     background-color: var(--medium-grey);
     color: var(--white);
@@ -195,6 +191,62 @@ body {
 
 /* RESPONSIVE */
 @media(max-width: 450px) {
+    /* CARD */
+    .card {
+        width: 340px;
+        height: 360px;
+        margin: 20px;
+        padding: 25px;
+        border-radius: 15px;
+    }
+
+    /* CARD FEEDBACK */
+    .star_icon {
+        width: 45px;
+        height: 45px;
+        margin-bottom: 10px;
+    }
+
+    .feedback_title {
+        font-size: 25px;
+        padding: 10px 0 10px 0;
+    }
+
+    .feedback_description {
+        font-size: 0.9rem;
+    }
+
+    .rating_stars .star-items {
+        padding: 20px 0 25px 0;
+    }
+
+    .rating_stars .star-items .star {
+        width: 45px;
+        height: 45px;  
+    }
+
+
+    /* CARD RESULT */
+    .card_result {
+        padding: 35px 20px;
+        gap: 10px;
+    }
+
+    .result_star {
+        padding: 8px 12px 5px;
+        margin-top: 8px;
+        font-size: 14px;
+    }
+
+    .result_title {
+        font-size: 25px;
+        padding-top: 15px;
+    }
+
+    .result_description {
+        font-size: 0.9rem;
+    }
+
     /* FOOTER */
     .attribution {
         font-size: 7px;

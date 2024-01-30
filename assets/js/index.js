@@ -3,6 +3,7 @@ let starRating = document.querySelectorAll('.star');
 let submitBtn = document.querySelector('.submit');
 let cardResult = document.querySelector('.card_result');
 let cardFeedback = document.querySelector('.card_feedback');
+let resultRating = document.querySelector('.result_rating');
 
 /* RATING */
 starRating.forEach((star) => {
@@ -29,3 +30,9 @@ submitBtn.addEventListener('click', () => {
 
 
 /* FEEDBACK */
+starRating.forEach((star,i) => {
+    star.onclick = function () {
+        let chosen_star = i + 1;
+        resultRating.innerText = `You selected ${chosen_star} out of 5`;
+    }
+});
